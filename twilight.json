@@ -94,7 +94,7 @@
   ],
   "components": [
     {
-      "key": "home-hero",
+      "key": "3005cd8a-9718-4075-bf24-6e0563678da0",
       "title": {
         "en": "Hero Section",
         "ar": "قسم الهيرو"
@@ -105,7 +105,7 @@
       "fields": []
     },
     {
-      "key": "home-featured-categories",
+      "key": "28f187e3-8e52-4be2-922b-0d3d2fb1f2ba",
       "title": {
         "en": "Featured Categories",
         "ar": "التصنيفات المميزة"
@@ -116,7 +116,7 @@
       "fields": []
     },
     {
-      "key": "home-featured-products",
+      "key": "df681beb-e437-4c53-88bd-8981a5fc7b43",
       "title": {
         "en": "Featured Products",
         "ar": "المنتجات المميزة"
@@ -127,7 +127,7 @@
       "fields": []
     },
     {
-      "key": "home-promo-banners",
+      "key": "374c23c4-cb57-4dce-92f6-74e50bd11878",
       "title": {
         "en": "Promotional Banners",
         "ar": "بانرات ترويجية"
@@ -138,7 +138,7 @@
       "fields": []
     },
     {
-      "key": "home-testimonials",
+      "key": "e10e16a6-08d0-4fdb-a172-d4204a01d9b0",
       "title": {
         "en": "Testimonials",
         "ar": "آراء العملاء"
@@ -149,7 +149,7 @@
       "fields": []
     },
     {
-      "key": "home-brands",
+      "key": "b32e061c-32c3-47cd-94df-4cafb358b06c",
       "title": {
         "en": "Brands",
         "ar": "العلامات التجارية"
