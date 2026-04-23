@@ -1,13 +1,9 @@
 {% extends "layouts.master" %}
 
 {% block content %}
-<section class="hero">
-  <h1 style="margin:0 0 8px">تم تحميل الثيم بنجاح</h1>
-  <p style="margin:0 0 16px">إذا ظهرت هذه الرسالة فالمعاينة تعمل، وكانت المشكلة من مكونات الصفحة الديناميكية.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px">
-    <div style="background:#f0f4ff;padding:12px;border-radius:8px">قسم 1</div>
-    <div style="background:#eefbf7;padding:12px;border-radius:8px">قسم 2</div>
-    <div style="background:#fff7ed;padding:12px;border-radius:8px">قسم 3</div>
-  </div>
-</section>
+  {% include 'components.home.enhanced-slider' %}
+  {% include 'components.home.slider-products-with-header' %}
+  {% include 'components.home.main-links' %}
+  {% include 'components.home.enhanced-square-banners' %}
+  {% include 'components.home.custom-testimonials' %}
 {% endblock %}
