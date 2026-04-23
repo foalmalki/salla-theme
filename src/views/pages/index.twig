@@ -1,9 +1,5 @@
 {% extends "layouts.master" %}
 
 {% block content %}
-  {% include 'components.home.enhanced-slider' %}
-  {% include 'components.home.slider-products-with-header' %}
-  {% include 'components.home.main-links' %}
-  {% include 'components.home.enhanced-square-banners' %}
-  {% include 'components.home.custom-testimonials' %}
+  {% component home %}
 {% endblock %}
