@@ -1,24 +1,42 @@
 {
-  "version": "1.0.0",
-  "theme_name": "Afaq",
-  "repo_url": "https://github.com/foalmalki/salla-theme",
-  "support_url": "https://example.com/support",
+  "name": {
+    "ar": "آفاق",
+    "en": "Afaq"
+  },
+  "repository": "https://github.com/foalmalki/salla-theme",
+  "author_email": "support@example.com",
+  "features": [
+    "mega-menu",
+    "fonts",
+    "color",
+    "breadcrumb",
+    "filters"
+  ],
   "settings": [
     {
+      "type": "static",
+      "format": "title",
+      "id": "theme_identity_title",
+      "value": "###### Theme Identity",
+      "variant": "h6"
+    },
+    {
       "type": "boolean",
-      "label": "Sticky Header",
       "id": "sticky_header",
+      "label": "Sticky Header",
       "format": "switch",
+      "required": false,
+      "value": true,
       "selected": true
     },
     {
       "type": "string",
-      "label": "Placeholder",
       "id": "placeholder",
+      "label": "Placeholder",
       "format": "hidden",
-      "value": "images/img_placeholder.png"
+      "value": "images/img_placeholder.png",
+      "required": false
     }
   ],
-  "features": [],
   "components": []
 }
