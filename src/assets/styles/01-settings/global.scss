@@ -5,24 +5,33 @@ $infinte-color: var(--infinte-color);
 $main-text-color: var(--main-text-color);
 
 :root {
-  --infinte-color: #c9c9c9;
-  --main-text-color: #231f1e;
-  --main-text-color-dark: #2b2d34;
+  --infinte-color: #d8dbe6;
+  --main-text-color: #1f2340;
+  --main-text-color-dark: #161a2f;
 
-  /* current */
-  --color-primary: #5cd5c4;
-  --color-primary: #414042;
-  --color-primary-d: #272628;
-  --color-primary-l: #676668;
-  --color-primary-reverse: #ff6767;
-  --color-text: #7c8082;
-  --bg-gray: #c6c7ce1a;
-  --color-grey: #f5f7f9;
-  --color-light-grey: #eeeeee;
+  /* Brand identity palette */
+  --color-primary: #6a1bce;
+  --color-secondary: #1e88e5;
+  --color-dark: #4a3bd1;
+  --color-accent: #00b9ad;
+
+  /* Twilight-compatible variables used across components */
+  --color-primary-dark: #4a3bd1;
+  --color-primary-light: #8b49e0;
+  --color-primary-reverse: #ffffff;
+  --color-text: #5a6078;
+  --bg-gray: #f1f4fb;
+  --color-grey: #f8f9fd;
+  --color-light-grey: #e8ebf5;
+
+  /* Legacy aliases for any old selectors */
+  --color-primary-d: var(--color-primary-dark);
+  --color-primary-l: var(--color-primary-light);
+
   /* font-size */
   --font-sm: 0.8685714286rem;
   /* font-family: ; */
-  --font-main: "DINNextLTArabic";
+  --font-main: "IBM Plex Sans Arabic";
 
   /* plugins */
   --mm-ocd-width: calc(100% - 51px);
