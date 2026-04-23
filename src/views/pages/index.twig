@@ -1,5 +1,11 @@
 {% extends "layouts.master" %}
 
 {% block content %}
-  {% component home %}
+  {% if components is defined and components|length %}
+    {% for component in components %}
+      {% component component %}
+    {% endfor %}
+  {% else %}
+    {% component home %}
+  {% endif %}
 {% endblock %}

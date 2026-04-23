@@ -5,11 +5,27 @@
   },
   "repository": "https://github.com/foalmalki/salla-theme",
   "author_email": "support@example.com",
+  "support_url": "https://example.com/support",
+  "description": {
+    "ar": "\u062b\u064a\u0645 \u0627\u062d\u062a\u0631\u0627\u0641\u064a \u0633\u0631\u064a\u0639 \u0648\u0645\u0647\u064a\u0623 \u0644\u0644\u0645\u062a\u0627\u062c\u0631",
+    "en": "A premium fast and conversion-ready Salla theme"
+  },
   "features": [
     "mega-menu",
     "fonts",
     "color",
     "breadcrumb",
+    "component-featured-products",
+    "component-fixed-banner",
+    "component-fixed-products",
+    "component-photos-slider",
+    "component-products-slider",
+    "component-parallax-background",
+    "component-random-testimonials",
+    "component-testimonials",
+    "component-square-photos",
+    "component-store-features",
+    "component-youtube",
     "filters"
   ],
   "settings": [
@@ -98,10 +114,5 @@
       "image": null,
       "fields": []
     }
-  ],
-  "support_url": "https://example.com/support",
-  "description": {
-    "ar": "\u062b\u064a\u0645 \u0627\u062d\u062a\u0631\u0627\u0641\u064a \u0633\u0631\u064a\u0639 \u0648\u0645\u0647\u064a\u0623 \u0644\u0644\u0645\u062a\u0627\u062c\u0631",
-    "en": "A premium fast and conversion-ready Salla theme"
-  }
+  ]
 }
