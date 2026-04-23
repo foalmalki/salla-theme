@@ -1,0 +1,23 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'blog.title'|trans }}{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <h1>{{ 'blog.title'|trans }}</h1>
+    <div class="blog-grid">
+      {% for i in 1..6 %}
+        {% include 'components/blog/article-card.twig' with {
+          article: {
+            title: 'blog.article'|trans ~ ' ' ~ i,
+            excerpt: 'blog.excerpt'|trans,
+            image: 'https://picsum.photos/600/380?random=' ~ (200 + i),
+            url: '/blog/article-' ~ i
+          }
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

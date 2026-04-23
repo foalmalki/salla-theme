@@ -1,0 +1,12 @@
+﻿<section class="newsletter-block">
+  <div class="container newsletter-block__inner">
+    <div>
+      <h3>{{ 'newsletter.title'|trans }}</h3>
+      <p>{{ 'newsletter.subtitle'|trans }}</p>
+    </div>
+    <form class="newsletter-form" action="/newsletter/subscribe" method="post">
+      <input type="email" name="email" placeholder="{{ 'newsletter.placeholder'|trans }}" required>
+      <button type="submit" class="btn btn--accent">{{ 'newsletter.subscribe'|trans }}</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+{
+  "name": "salla-afaq-premium-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium Salla Twilight Theme",
+  "scripts": {
+    "dev": "salla theme preview",
+    "build": "echo Build handled by Twilight pipeline",
+    "lint": "echo Add linting rules if needed"
+  },
+  "devDependencies": {
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2"
+  }
+}

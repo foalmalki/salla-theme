@@ -1,0 +1,5 @@
+﻿<div class="empty-state">
+  <h3>{{ title|default('common.no_data'|trans) }}</h3>
+  <p>{{ message|default('common.try_again_later'|trans) }}</p>
+  <a href="{{ action_url|default('/') }}" class="btn btn--primary">{{ action_label|default('common.back_home'|trans) }}</a>
+</div>

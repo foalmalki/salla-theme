@@ -1,0 +1,13 @@
+﻿<section class="section">
+  <div class="container">
+    {% include 'components/common/section-header.twig' with { title: 'home.testimonials'|trans } %}
+    <div class="testimonials">
+      {% for i in 1..3 %}
+        <blockquote>
+          <p>"{{ 'home.testimonial_text'|trans }}"</p>
+          <footer>{{ 'home.testimonial_author'|trans }} {{ i }}</footer>
+        </blockquote>
+      {% endfor %}
+    </div>
+  </div>
+</section>

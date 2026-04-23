@@ -1,0 +1,14 @@
+﻿<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <p class="hero__eyebrow">{{ 'home.hero_eyebrow'|trans }}</p>
+      <h1>{{ theme.settings.hero_title|default('home.hero_title'|trans) }}</h1>
+      <p>{{ theme.settings.hero_subtitle|default('home.hero_subtitle'|trans) }}</p>
+      <div class="hero__actions">
+        {% include 'components/common/button.twig' with { href: '/categories', label: theme.settings.hero_primary_cta|default('common.shop_now'|trans), variant: 'btn--primary' } %}
+        {% include 'components/common/button.twig' with { href: '/offers', label: theme.settings.hero_secondary_cta|default('common.explore_offers'|trans), variant: 'btn--ghost' } %}
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true"></div>
+  </div>
+</section>

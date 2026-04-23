@@ -1,0 +1,23 @@
+﻿<header class="site-header {{ theme.settings.sticky_header ? 'site-header--sticky' : '' }}">
+  {% include 'components/header/topbar.twig' %}
+
+  <div class="container site-header__main">
+    <button class="icon-btn mobile-only" type="button" data-open-mobile-nav aria-label="{{ 'header.open_menu'|trans }}">M</button>
+    <a href="/" class="site-logo" aria-label="{{ 'header.home'|trans }}">
+      <span>{{ store.name|default('Afaq') }}</span>
+    </a>
+    {% include 'components/header/nav.twig' %}
+    <div class="site-header__actions">
+      <button class="icon-btn" type="button" data-open-search aria-label="{{ 'header.search'|trans }}">S</button>
+      <a class="icon-btn" href="/customer/profile" aria-label="{{ 'header.account'|trans }}">A</a>
+      <a class="icon-btn" href="/cart" aria-label="{{ 'header.cart'|trans }}">C</a>
+    </div>
+  </div>
+
+  <div class="container desktop-only">
+    {% include 'components/header/mega-menu.twig' %}
+  </div>
+
+  {% include 'components/header/mobile-nav.twig' %}
+  {% include 'components/header/search-modal.twig' %}
+</header>

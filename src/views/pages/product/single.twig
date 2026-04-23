@@ -1,0 +1,62 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'product.single_title'|trans }}{% endblock %}
+
+{% block content %}
+<section class="section product-single">
+  <div class="container product-single__grid">
+    {% include 'components/product/gallery.twig' with {
+      product: {
+        name: 'product.single_title'|trans,
+        image: 'https://picsum.photos/760/760?random=111'
+      }
+    } %}
+
+    <div class="product-single__info">
+      <p class="product-single__brand">Afaq Brand</p>
+      <h1>{{ 'product.single_title'|trans }}</h1>
+      <p class="product-single__price">349 SAR <del>429 SAR</del></p>
+      <p>{{ 'product.single_desc'|trans }}</p>
+
+      <div class="product-options">
+        <label>{{ 'product.size'|trans }}</label>
+        <select>
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </div>
+
+      <div class="product-actions">
+        <button class="btn btn--primary">{{ 'product.add_to_cart'|trans }}</button>
+        <button class="btn btn--ghost">{{ 'product.buy_now'|trans }}</button>
+      </div>
+
+      {% include 'components/common/badges.twig' %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--muted">
+  <div class="container">
+    <h2>{{ 'product.specifications'|trans }}</h2>
+    <p>{{ 'product.specifications_text'|trans }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% include 'components/product/faq.twig' %}
+  </div>
+</section>
+
+{% include 'components/product/related-products.twig' %}
+{% include 'components/product/sticky-atc.twig' with {
+  product: {
+    name: 'product.single_title'|trans,
+    price: '349 SAR'
+  }
+} %}
+{% endblock %}
+
+{% block scripts %}
+  <script defer src="{{ 'scripts/product.js'|asset }}"></script>
+{% endblock %}

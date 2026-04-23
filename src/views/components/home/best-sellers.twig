@@ -1,0 +1,17 @@
+﻿<section class="section">
+  <div class="container">
+    {% include 'components/common/section-header.twig' with { title: 'home.best_sellers'|trans, action_url: '/products?sort=bestseller' } %}
+    <div class="product-grid product-grid--compact">
+      {% for i in 1..4 %}
+        {% include 'components/product/product-card.twig' with {
+          product: {
+            name: 'home.best_seller'|trans ~ ' ' ~ i,
+            price: (249 + i * 20) ~ ' SAR',
+            badge: 'product.badge_best_seller'|trans,
+            image: 'https://picsum.photos/460/520?random=' ~ (40 + i)
+          }
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

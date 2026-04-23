@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html lang="{{ locale.code|default('ar') }}" dir="{{ locale.code|default('ar') starts with 'ar' ? 'rtl' : 'ltr' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block page_title %}{{ store.name|default('Afaq Store') }}{% endblock %}</title>
+  <meta name="description" content="{% block meta_description %}{{ 'meta.default_description'|trans }}{% endblock %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="{{ 'styles/main.css'|asset }}">
+  {% block head_extra %}{% endblock %}
+</head>
+<body class="theme-afaq {{ locale.code|default('ar') starts with 'ar' ? 'is-rtl' : 'is-ltr' }}">
+  {% include 'components/header/header.twig' %}
+
+  <main id="main-content" class="site-main">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include 'components/footer/footer.twig' %}
+
+  <script defer src="{{ 'scripts/main.js'|asset }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

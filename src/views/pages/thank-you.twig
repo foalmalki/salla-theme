@@ -1,0 +1,13 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'common.thank_you'|trans }}{% endblock %}
+
+{% block content %}
+<section class="section centered-page">
+  <div class="container small-container">
+    <h1>{{ 'common.thank_you'|trans }}</h1>
+    <p>{{ 'common.thank_you_message'|trans }}</p>
+    <a href="/customer/orders" class="btn btn--primary">{{ 'common.view_order'|trans }}</a>
+  </div>
+</section>
+{% endblock %}

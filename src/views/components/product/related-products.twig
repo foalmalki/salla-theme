@@ -1,0 +1,20 @@
+﻿<section class="section">
+  <div class="container">
+    {% include 'components/common/section-header.twig' with {
+      title: 'product.related_products'|trans,
+      action_url: '/categories',
+      action_label: 'common.view_all'|trans
+    } %}
+    <div class="product-grid">
+      {% for i in 1..4 %}
+        {% include 'components/product/product-card.twig' with {
+          product: {
+            name: 'related.item'|trans ~ ' ' ~ i,
+            price: (149 + i * 10) ~ ' SAR',
+            image: 'https://picsum.photos/460/520?random=' ~ (70 + i)
+          }
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

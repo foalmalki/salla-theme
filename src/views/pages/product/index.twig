@@ -1,0 +1,35 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'product.listing_title'|trans }}{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container listing-layout">
+    {% include 'components/product/filters.twig' %}
+    <div>
+      <div class="listing-toolbar">
+        <h1>{{ 'product.listing_title'|trans }}</h1>
+        <select aria-label="sorting">
+          <option>{{ 'product.sort_popular'|trans }}</option>
+          <option>{{ 'product.sort_newest'|trans }}</option>
+          <option>{{ 'product.sort_price_low'|trans }}</option>
+          <option>{{ 'product.sort_price_high'|trans }}</option>
+        </select>
+      </div>
+      <div class="product-grid">
+        {% for i in 1..12 %}
+          {% include 'components/product/product-card.twig' with {
+            product: {
+              name: 'product.item'|trans ~ ' ' ~ i,
+              price: (120 + i * 9) ~ ' SAR',
+              old_price: i is divisible by(3) ? (140 + i * 9) ~ ' SAR' : null,
+              badge: i is divisible by(4) ? 'product.badge_discount'|trans : (i is even ? 'product.badge_new'|trans : null),
+              image: 'https://picsum.photos/460/520?random=' ~ (100 + i)
+            }
+          } %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

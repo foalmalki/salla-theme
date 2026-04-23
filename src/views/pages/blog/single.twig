@@ -1,0 +1,15 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'blog.single_title'|trans }}{% endblock %}
+
+{% block content %}
+<article class="section article-single">
+  <div class="container article-single__content">
+    <p class="article-meta">2026-04-23</p>
+    <h1>{{ 'blog.single_title'|trans }}</h1>
+    <img src="https://picsum.photos/1200/600?random=299" alt="Article cover" loading="lazy">
+    <p>{{ 'blog.paragraph_1'|trans }}</p>
+    <p>{{ 'blog.paragraph_2'|trans }}</p>
+  </div>
+</article>
+{% endblock %}

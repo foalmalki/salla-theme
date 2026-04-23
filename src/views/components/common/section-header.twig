@@ -1,0 +1,9 @@
+﻿<div class="section-header">
+  <div>
+    <p class="section-header__kicker">{{ kicker|default('') }}</p>
+    <h2>{{ title }}</h2>
+  </div>
+  {% if action_url %}
+    <a class="section-header__action" href="{{ action_url }}">{{ action_label|default('common.view_all'|trans) }}</a>
+  {% endif %}
+</div>

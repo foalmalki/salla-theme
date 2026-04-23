@@ -1,0 +1,19 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'customer.notifications'|trans }}{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container customer-layout">
+    {% include 'components/customer/sidebar.twig' %}
+    <div class="customer-content">
+      <h1>{{ 'customer.notifications'|trans }}</h1>
+      <ul class="notification-list">
+        <li>{{ 'customer.notification_1'|trans }}</li>
+        <li>{{ 'customer.notification_2'|trans }}</li>
+        <li>{{ 'customer.notification_3'|trans }}</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

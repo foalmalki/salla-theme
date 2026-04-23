@@ -1,0 +1,13 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'landing.title'|trans }}{% endblock %}
+
+{% block content %}
+<section class="landing-hero">
+  <div class="container">
+    <h1>{{ 'landing.title'|trans }}</h1>
+    <p>{{ 'landing.subtitle'|trans }}</p>
+    <a href="/categories" class="btn btn--accent">{{ 'common.start_shopping'|trans }}</a>
+  </div>
+</section>
+{% endblock %}

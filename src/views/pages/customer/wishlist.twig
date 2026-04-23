@@ -1,0 +1,25 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'customer.wishlist'|trans }}{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container customer-layout">
+    {% include 'components/customer/sidebar.twig' %}
+    <div class="customer-content">
+      <h1>{{ 'customer.wishlist'|trans }}</h1>
+      <div class="product-grid product-grid--compact">
+        {% for i in 1..4 %}
+          {% include 'components/product/product-card.twig' with {
+            product: {
+              name: 'customer.saved_item'|trans ~ ' ' ~ i,
+              price: (210 + i * 10) ~ ' SAR',
+              image: 'https://picsum.photos/460/520?random=' ~ (140 + i)
+            }
+          } %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

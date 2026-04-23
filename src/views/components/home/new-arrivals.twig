@@ -1,0 +1,17 @@
+﻿<section class="section section--muted">
+  <div class="container">
+    {% include 'components/common/section-header.twig' with { title: 'home.new_arrivals'|trans, action_url: '/products?sort=newest' } %}
+    <div class="product-grid product-grid--compact">
+      {% for i in 1..4 %}
+        {% include 'components/product/product-card.twig' with {
+          product: {
+            name: 'home.new_item'|trans ~ ' ' ~ i,
+            price: (139 + i * 22) ~ ' SAR',
+            badge: 'product.badge_new'|trans,
+            image: 'https://picsum.photos/460/520?random=' ~ (50 + i)
+          }
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

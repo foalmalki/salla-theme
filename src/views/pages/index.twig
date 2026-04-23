@@ -1,0 +1,17 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}{{ 'home.page_title'|trans }}{% endblock %}
+
+{% block content %}
+  {% include 'components/home/hero.twig' %}
+  {% if theme.settings.show_featured_categories %}{% include 'components/home/featured-categories.twig' %}{% endif %}
+  {% if theme.settings.show_featured_products %}{% include 'components/home/featured-products.twig' %}{% endif %}
+  {% if theme.settings.show_best_sellers %}{% include 'components/home/best-sellers.twig' %}{% endif %}
+  {% if theme.settings.show_new_arrivals %}{% include 'components/home/new-arrivals.twig' %}{% endif %}
+  {% include 'components/home/promo-banners.twig' %}
+  {% if theme.settings.show_testimonials %}{% include 'components/home/testimonials.twig' %}{% endif %}
+  {% include 'components/home/trust-badges.twig' %}
+  {% if theme.settings.show_brands %}{% include 'components/home/brands.twig' %}{% endif %}
+  {% include 'components/home/instagram-gallery.twig' %}
+  {% include 'components/home/cta-strip.twig' %}
+{% endblock %}

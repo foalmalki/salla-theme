@@ -1,0 +1,16 @@
+﻿{% extends 'layouts/master.twig' %}
+
+{% block page_title %}404{% endblock %}
+
+{% block content %}
+<section class="section centered-page">
+  <div class="container small-container">
+    {% include 'components/common/empty-state.twig' with {
+      title: '404',
+      message: 'common.page_not_found'|trans,
+      action_url: '/',
+      action_label: 'common.back_home'|trans
+    } %}
+  </div>
+</section>
+{% endblock %}

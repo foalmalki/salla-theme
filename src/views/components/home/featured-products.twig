@@ -1,0 +1,18 @@
+﻿<section class="section section--muted">
+  <div class="container">
+    {% include 'components/common/section-header.twig' with { title: 'home.featured_products'|trans, action_url: '/products' } %}
+    <div class="product-grid">
+      {% for i in 1..8 %}
+        {% include 'components/product/product-card.twig' with {
+          product: {
+            name: 'home.product'|trans ~ ' ' ~ i,
+            price: (199 + i * 15) ~ ' SAR',
+            old_price: (239 + i * 15) ~ ' SAR',
+            badge: i is odd ? 'product.badge_new'|trans : 'product.badge_discount'|trans,
+            image: 'https://picsum.photos/460/520?random=' ~ (20 + i)
+          }
+        } %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
