@@ -1,10 +1,3 @@
-﻿<section class="section section--muted">
-  <div class="container">
-    {% include 'components/common/section-header.twig' with { title: 'home.brands'|trans, action_url: '/brands' } %}
-    <div class="brands-grid">
-      {% for i in 1..6 %}
-        <a class="brand-chip" href="/brands">{{ 'brand.name'|trans }} {{ i }}</a>
-      {% endfor %}
-    </div>
-  </div>
+<section style="padding:24px;background:#fff;border-bottom:1px solid #e5e7eb">
+  <div class="container"><h2>{{ 'home.brands'|trans }}</h2></div>
 </section>
