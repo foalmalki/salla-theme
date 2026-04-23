@@ -103,7 +103,7 @@
             "id": "topnav_is_dark",
             "format": "switch",
             "required": false,
-            "value": true,
+            "value": false,
             "selected": false
         },
         {
@@ -148,7 +148,7 @@
             "id": "footer_is_dark",
             "format": "switch",
             "required": false,
-            "value": true,
+            "value": false,
             "selected": false
         },
         {

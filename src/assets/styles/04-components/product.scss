@@ -77,6 +77,28 @@
     }
 }
 
+/* Brand color application for product identity */
+.s-product-card-content-title,
+.s-product-card-content-title a,
+.s-product-card-content-title h3,
+.s-product-card-content-title h4 {
+  color: #2b3156 !important;
+  font-weight: 700;
+}
+
+.s-product-card-price,
+.s-product-card-sale-price h4,
+.s-product-card-starting-price h4,
+.s-product-card-content-sub .sale-price {
+  color: var(--color-primary-dark) !important;
+}
+
+.s-product-card-regular-price,
+.s-product-card-sale-price del,
+.s-product-card-starting-price span {
+  color: #8c93ad !important;
+}
+
 .pie-wrapper {
   @apply w-[72px] h-[72px] absolute top-2.5 rtl:left-5 ltr:right-5 text-primary flex items-center justify-center;
 

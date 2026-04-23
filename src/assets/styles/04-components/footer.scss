@@ -1,13 +1,17 @@
 
 .store-footer {
-  @apply relative bg-darker text-white mt-8 sm:mt-16;
+  @apply relative mt-8 sm:mt-16;
+  background: #f7f8fe;
+  color: #31375a;
 
   a{
     @apply transition-opacity hover:opacity-75;
   }
 
   &__inner{
-    @apply bg-dark py-8 lg:py-16 border-b border-dashed border-b-white/10;
+    @apply py-8 lg:py-16 border-b;
+    background: #ffffff;
+    border-color: #e4e9f7;
   }  
 
   h3{
@@ -15,35 +19,26 @@
   }
 
   .social-link {
-    @apply border rounded-full w-8 h-8 justify-center flex items-center hover:opacity-75 transition duration-300 text-sm
+    @apply border rounded-full w-8 h-8 justify-center flex items-center hover:opacity-75 transition duration-300 text-sm;
+    border-color: #d7def1;
   }
 
   .contact-social{
-    @apply mt-5 pt-5 border-t border-white/10;
+    @apply mt-5 pt-5 border-t;
+    border-color: #e8ebf7;
 
     ul {
       @apply mb-0;
     }
   }
 
-  .footer-is-light & {
-    @apply bg-gray-50 text-gray-700;
-
-    .store-footer__inner {
-      @apply bg-gray-100 border-b-gray-200;
-    }
-
-    .social-link {
-      @apply border-gray-300;
-    }
-
-    .contact-social{
-      @apply border-gray-100;
-    }
+  .footer-is-dark & {
+    background: linear-gradient(140deg, #eef2ff 0%, #f3f8ff 55%, #edf9f7 100%);
+    color: #30375b;
   }
 }
 
 
 .copyright-text p{
-  @apply text-gray-700;
+  color: #5d6688;
 }
