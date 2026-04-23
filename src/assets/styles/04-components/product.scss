@@ -382,6 +382,31 @@
   }
 }
 
+/* Brand polish: product title + price colors across cards/sliders */
+.s-product-card-content-title,
+.s-product-card-content-title a,
+.s-product-card-content-title h3,
+.s-product-card-content-title h4,
+.s-product-name,
+.s-product-name a {
+  color: #2f365d !important;
+}
+
+.s-product-card-price,
+.s-product-card-sale-price h4,
+.s-product-card-starting-price h4,
+.s-product-price,
+.total-price {
+  color: var(--color-primary-dark) !important;
+}
+
+.s-product-card-regular-price,
+.s-product-card-sale-price del,
+.s-product-card-starting-price span,
+.before-price {
+  color: #8a93b1 !important;
+}
+
 // filters
 @media (max-width: 1024px){
   salla-filters{

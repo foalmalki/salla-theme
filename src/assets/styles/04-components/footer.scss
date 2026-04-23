@@ -1,17 +1,13 @@
 
 .store-footer {
-  @apply relative mt-8 sm:mt-16;
-  background: #f7f8fe;
-  color: #31375a;
+  @apply relative bg-darker text-white mt-8 sm:mt-16;
 
   a{
     @apply transition-opacity hover:opacity-75;
   }
 
   &__inner{
-    @apply py-8 lg:py-16 border-b;
-    background: #ffffff;
-    border-color: #e4e9f7;
+    @apply bg-dark py-8 lg:py-16 border-b border-dashed border-b-white/10;
   }  
 
   h3{
@@ -19,26 +15,54 @@
   }
 
   .social-link {
-    @apply border rounded-full w-8 h-8 justify-center flex items-center hover:opacity-75 transition duration-300 text-sm;
-    border-color: #d7def1;
+    @apply border rounded-full w-8 h-8 justify-center flex items-center hover:opacity-75 transition duration-300 text-sm
   }
 
   .contact-social{
-    @apply mt-5 pt-5 border-t;
-    border-color: #e8ebf7;
+    @apply mt-5 pt-5 border-t border-white/10;
 
     ul {
       @apply mb-0;
     }
   }
 
-  .footer-is-dark & {
-    background: linear-gradient(140deg, #eef2ff 0%, #f3f8ff 55%, #edf9f7 100%);
-    color: #30375b;
+  .footer-is-light & {
+    @apply bg-gray-50 text-gray-700;
+
+    .store-footer__inner {
+      @apply bg-gray-100 border-b-gray-200;
+    }
+
+    .social-link {
+      @apply border-gray-300;
+    }
+
+    .contact-social{
+      @apply border-gray-100;
+    }
   }
 }
 
 
 .copyright-text p{
-  color: #5d6688;
+  @apply text-gray-700;
+}
+
+/* Brand polish: soft footer palette in both modes */
+.store-footer,
+.footer-is-dark .store-footer,
+.footer-is-light .store-footer {
+  background: #f7f9ff !important;
+  color: #3b4265 !important;
+}
+
+.store-footer__inner,
+.footer-is-dark .store-footer__inner,
+.footer-is-light .store-footer__inner {
+  background: #ffffff !important;
+  border-color: #e3e9f7 !important;
+}
+
+.store-footer .contact-social {
+  border-color: #e7ebf8 !important;
 }

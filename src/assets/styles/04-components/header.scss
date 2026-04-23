@@ -30,21 +30,20 @@
   } 
 
   .topnav-is-dark & {
-    background: linear-gradient(110deg, #f1efff 0%, #ecf4ff 55%, #e8f8f5 100%);
-    color: #2e3558;
+    @apply bg-dark text-gray-300;
 
     .btn--circle-gray,
     .btn--rounded-gray,
     .s-search-input{
-      @apply bg-white hover:bg-gray-100
+      @apply bg-gray-100/10 hover:bg-gray-100/[0.15]
     }
 
     .topnav-link-item{
-      @apply border-gray-300;
+      @apply border-gray-300/10;
     }
 
     .s-search-input{
-      @apply text-gray-700;
+      @apply text-white;
     }
   }
 
@@ -215,66 +214,36 @@ salla-user-menu{
   }
 }
 
-/* Professional identity-driven header look */
+/* Brand polish: calm professional header colors */
 .store-header {
   .top-navbar {
-    background: linear-gradient(110deg, #f6f2ff 0%, #eef6ff 55%, #ebfbf8 100%);
-    color: #2e3558;
-    border-bottom: 1px solid #e7eaf7;
+    background: linear-gradient(110deg, #f6f3ff 0%, #eff6ff 55%, #edfbf9 100%);
+    color: #3a4163;
+    border-bottom: 1px solid #e6eaf7;
 
     .topnav-link-item {
-      color: #3c4368;
-      border-color: #d9deef;
-      font-weight: 600;
-    }
-
-    .btn--rounded-gray,
-    .btn--circle-gray {
-      background: #ffffff;
-      color: #4a5076;
-      border: 1px solid #dce2f3;
+      color: #4a5277;
+      border-color: #d8deef;
     }
   }
 
   .main-nav-container {
-    border-bottom: 1px solid #e8ebf5;
-    box-shadow: 0 8px 20px rgba(56, 71, 122, 0.06);
-
-    .inner {
-      background: rgba(255, 255, 255, 0.98);
-      backdrop-filter: blur(10px);
-    }
-  }
-
-  .navbar-brand img {
-    max-height: 52px;
-    max-width: 182px;
-  }
-
-  custom-main-menu {
-    .main-menu > li > a {
-      color: #1f2340;
-      font-weight: 700;
-      letter-spacing: 0.1px;
-      border-radius: 999px;
-      margin-inline: 2px;
-      transition: all .2s ease;
-    }
-
-    .main-menu > li > a:hover,
-    .main-menu > li.is-active > a {
-      color: var(--brand-primary);
-      background: rgba(106, 27, 206, 0.08);
-    }
+    border-bottom: 1px solid #e8ecf8;
+    box-shadow: 0 10px 24px rgba(54, 65, 112, 0.06);
   }
 
   .header-btn__icon {
-    border-color: #dfe4f3;
-    color: var(--brand-dark);
-    background: #fff;
+    color: var(--color-primary-dark);
+    border-color: #dbe2f4;
   }
 
-  .s-cart-summary-count {
-    background: var(--brand-accent);
+  .s-cart-summary-total {
+    color: #2d3358 !important;
   }
+}
+
+/* If merchant toggled dark topnav in old settings, keep it calm/light */
+.topnav-is-dark .top-navbar {
+  background: linear-gradient(110deg, #f4f1ff 0%, #edf4ff 55%, #eaf9f6 100%);
+  color: #3a4163;
 }
