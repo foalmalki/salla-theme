@@ -1,24 +1,20 @@
 <!doctype html>
-<html lang="{{ language.code|default('ar') }}" dir="{{ theme.is_rtl ? 'rtl' : 'ltr' }}">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{% block page_title %}{{ store.name|default('Afaq Store') }}{% endblock %}</title>
-  <meta name="description" content="{% block meta_description %}{{ 'meta.default_description'|trans }}{% endblock %}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="{{ 'styles/main.css'|asset }}">
-  {% block head_extra %}{% endblock %}
+  <title>{{ store.name|default('Afaq Store') }}</title>
+  <style>
+    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f6f8fb;color:#111}
+    .wrap{max-width:1100px;margin:0 auto;padding:20px}
+    .bar{background:#fff;border-bottom:1px solid #e5e7eb}
+    .hero{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:28px;margin-top:20px}
+  </style>
 </head>
-<body class="theme-afaq {{ theme.is_rtl ? 'is-rtl' : 'is-ltr' }}">
-  {% component 'header.header' %}
-
-  <main id="main-content" class="site-main">
+<body>
+  <header class="bar"><div class="wrap"><strong>{{ store.name|default('Afaq') }}</strong></div></header>
+  <main class="wrap">
     {% block content %}{% endblock %}
   </main>
-
-  {% component 'footer.footer' %}
-
-  <script defer src="{{ 'scripts/main.js'|asset }}"></script>
-  {% block scripts %}{% endblock %}
 </body>
 </html>
