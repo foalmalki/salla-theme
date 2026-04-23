@@ -1,7 +1,0 @@
-﻿<article class="category-card">
-  <a href="{{ category.url|default('/categories') }}">
-    <img src="{{ category.image|default('https://picsum.photos/400/300?random=2') }}" alt="{{ category.name|default('Category') }}" loading="lazy">
-    <h3>{{ category.name|default('Category') }}</h3>
-    <p>{{ category.count|default('24') }} {{ 'category.products'|trans }}</p>
-  </a>
-</article>

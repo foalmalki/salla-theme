@@ -1,11 +1,14 @@
+{#
+| Variable         | Type       | Description                                                         |
+|------------------|------------|---------------------------------------------------------------------|
+| page             | object     |                                                                     |
+| page.title       | string     | *could be html                                                      |
+| page.slug        | string     | ex: "cat.show"                                                      |
+#}
 {% extends "layouts.master" %}
-
 {% block content %}
-  {% if components is defined and components|length %}
-    {% for component in components %}
-      {% component component %}
-    {% endfor %}
-  {% else %}
     {% component home %}
-  {% endif %}
+{% endblock %}
+{% block scripts %}
+    <script defer src="{{ 'home.js' | asset }}"></script>
 {% endblock %}

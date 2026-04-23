@@ -1,182 +1,27 @@
 {
-  "meta": {
-    "default_description": "ثيم احترافي سريع يركز على التحويل وتجربة المستخدم."
+  "blocks": {
+    "header": {
+      "cart": "السلة"
+    },
+    "appBanner": {
+      "download_now": "حمله الان"
+    }
+  },
+  "pages": {
+    "cart": {
+      "cart_options": "خيارات السلة"
+    },
+    "order": {
+      "can_edit_or_delete_your_review_within": "يمكنك تعديل أو حذف تقييمك خلال",
+      "edit_period_ended": "تم انتهاء المدة المحددة لتعديل التقييم",
+      "delete_period_ended": "تم انتهاء المدة المحددة لحذف التقييم",
+      "days_since_added": "أيام من إضافته",
+      "option_name": "الخيار",
+      "option_content": "المحتوى"
+    }
   },
   "common": {
-    "view_all": "عرض الكل",
-    "shop_now": "تسوق الآن",
-    "explore_offers": "استكشف العروض",
-    "start_shopping": "ابدأ التسوق",
-    "close": "إغلاق",
-    "search": "بحث",
-    "no_data": "لا توجد بيانات",
-    "try_again_later": "جرّب مرة أخرى لاحقًا.",
-    "back_home": "العودة للرئيسية",
-    "thank_you": "شكرًا لطلبك",
-    "thank_you_message": "تم استلام طلبك بنجاح وسنقوم بتحديثك بحالة الشحنة قريبًا.",
-    "view_order": "عرض الطلب",
-    "page_not_found": "الصفحة المطلوبة غير موجودة"
-  },
-  "header": {
-    "shipping_message": "شحن سريع إلى جميع مدن المملكة والخليج",
-    "help": "المساعدة",
-    "track_order": "تتبع الطلب",
-    "main_navigation": "التنقل الرئيسي",
-    "open_menu": "فتح القائمة",
-    "home": "الرئيسية",
-    "search": "البحث",
-    "account": "الحساب",
-    "cart": "السلة",
-    "search_placeholder": "ابحث عن منتج أو علامة..."
-  },
-  "nav": {
-    "home": "الرئيسية",
-    "categories": "التصنيفات",
-    "offers": "العروض",
-    "brands": "العلامات",
-    "blog": "المدونة",
-    "about": "من نحن",
-    "account": "الحساب"
-  },
-  "mega": {
-    "fashion": "الأزياء",
-    "men": "رجالي",
-    "women": "نسائي",
-    "kids": "أطفال",
-    "electronics": "الإلكترونيات",
-    "smartphones": "هواتف ذكية",
-    "audio": "صوتيات",
-    "gaming": "الألعاب",
-    "promo_title": "خصومات موسمية حتى 50%"
-  },
-  "footer": {
-    "about": "متجر عالمي بتجربة أنيقة وسريعة ومصمم لرفع المبيعات.",
-    "quick_links": "روابط سريعة",
-    "customer_service": "خدمة العملاء",
-    "shipping": "الشحن والتوصيل",
-    "returns": "الاستبدال والاسترجاع",
-    "contact": "اتصل بنا",
-    "follow_us": "تابعنا",
-    "rights": "جميع الحقوق محفوظة"
-  },
-  "newsletter": {
-    "title": "اشترك في نشرتنا البريدية",
-    "subtitle": "عروض حصرية وإطلاقات جديدة مباشرة إلى بريدك.",
-    "placeholder": "أدخل بريدك الإلكتروني",
-    "subscribe": "اشتراك"
-  },
-  "trust": {
-    "secure_payment": "دفع آمن",
-    "fast_shipping": "شحن سريع",
-    "easy_returns": "استرجاع سهل",
-    "customer_support": "دعم 24/7"
-  },
-  "home": {
-    "page_title": "الرئيسية",
-    "hero_eyebrow": "تصميم Premium للمتاجر الطموحة",
-    "hero_title": "اكتشف مستوى جديد من التسوق",
-    "hero_subtitle": "تجربة شراء انسيابية، سريعة، ومصممة لتحقيق تحويل أعلى.",
-    "featured_categories": "التصنيفات المميزة",
-    "featured_products": "منتجات مختارة",
-    "best_sellers": "الأكثر مبيعًا",
-    "new_arrivals": "وصل حديثًا",
-    "product": "منتج",
-    "best_seller": "الأكثر مبيعًا",
-    "new_item": "جديد",
-    "banner_small": "عروض أسبوعية",
-    "banner_small_title": "وفّر أكثر على أفضل الاختيارات",
-    "banner_large": "تخفيضات حصرية",
-    "banner_large_title": "خصم إضافي عند الشراء لأول مرة",
-    "testimonials": "آراء العملاء",
-    "testimonial_text": "التجربة رائعة والطلب وصل بسرعة والجودة ممتازة.",
-    "testimonial_author": "عميل",
-    "brands": "علامات مميزة",
-    "social_gallery": "من مجتمعنا",
-    "cta_title": "جاهز لتطوير متجرك؟"
-  },
-  "category": {
-    "label": "تصنيف",
-    "products": "منتج"
-  },
-  "product": {
-    "add_to_cart": "أضف للسلة",
-    "filters": "الفلاتر",
-    "price_range": "نطاق السعر",
-    "availability": "التوفر",
-    "in_stock": "متوفر",
-    "on_sale": "عروض",
-    "related_products": "منتجات قد تعجبك",
-    "listing_title": "جميع المنتجات",
-    "sort_popular": "الأكثر شيوعًا",
-    "sort_newest": "الأحدث",
-    "sort_price_low": "السعر من الأقل للأعلى",
-    "sort_price_high": "السعر من الأعلى للأقل",
-    "item": "منتج",
-    "single_title": "اسم المنتج المميز",
-    "single_desc": "وصف مختصر يوضح جودة المنتج وأبرز الفوائد التي تهم العميل قبل الشراء.",
-    "size": "المقاس",
-    "buy_now": "شراء سريع",
-    "specifications": "المواصفات",
-    "specifications_text": "تفاصيل المنتج والخامات والمقاسات وسياسة العناية بالشكل الواضح.",
-    "faq_q1": "هل المنتج أصلي؟",
-    "faq_a1": "نعم، جميع منتجاتنا أصلية ومورّدة من موزعين معتمدين.",
-    "faq_q2": "كم يستغرق الشحن؟",
-    "faq_a2": "عادة من 2 إلى 5 أيام عمل داخل السعودية.",
-    "badge_new": "جديد",
-    "badge_discount": "خصم",
-    "badge_best_seller": "الأكثر مبيعًا"
-  },
-  "related": {
-    "item": "منتج مرتبط"
-  },
-  "cart": {
-    "title": "سلة التسوق",
-    "item": "عنصر",
-    "summary": "ملخص الطلب",
-    "subtotal": "المجموع الفرعي",
-    "shipping": "الشحن",
-    "tax": "الضريبة",
-    "total": "الإجمالي",
-    "checkout": "إكمال الشراء",
-    "you_may_like": "قد يعجبك أيضًا",
-    "recommended": "اقتراح"
-  },
-  "customer": {
-    "dashboard": "لوحة الحساب",
-    "welcome": "مرحبًا بعودتك",
-    "orders": "الطلبات",
-    "wishlist": "المفضلة",
-    "notifications": "الإشعارات",
-    "pending": "قيد المعالجة",
-    "date": "التاريخ",
-    "status": "الحالة",
-    "completed": "مكتمل",
-    "saved_item": "عنصر محفوظ",
-    "notification_1": "تم تحديث حالة الطلب #1021 إلى قيد الشحن.",
-    "notification_2": "وصلت عروض جديدة على المنتجات المفضلة لديك.",
-    "notification_3": "لديك كوبون خصم فعال حتى نهاية الأسبوع."
-  },
-  "blog": {
-    "title": "المدونة",
-    "article": "مقال",
-    "excerpt": "محتوى مفيد يساعد عملاءك على اتخاذ قرار الشراء بثقة.",
-    "single_title": "كيف تبني تجربة شراء ترفع معدل التحويل؟",
-    "paragraph_1": "نجاح المتجر لا يعتمد فقط على المنتجات، بل على الرحلة الكاملة من اكتشاف المنتج حتى إتمام الطلب.",
-    "paragraph_2": "التركيز على الوضوح، السرعة، والثقة في كل خطوة ينعكس مباشرة على المبيعات."
-  },
-  "brand": {
-    "title": "العلامات التجارية",
-    "name": "علامة",
-    "description": "جودة عالية وتفاصيل دقيقة تناسب نمط حياة عصري.",
-    "single_title": "صفحة العلامة",
-    "product": "منتج العلامة"
-  },
-  "page": {
-    "title": "صفحة عامة",
-    "default_content": "يمكن للتاجر تعديل هذا المحتوى من لوحة التحكم بسهولة."
-  },
-  "landing": {
-    "title": "عروض الافتتاح الكبرى",
-    "subtitle": "تشكيلة مختارة بعناية مع خصومات حصرية لفترة محدودة."
+    "bank_offer_sub_title_multiple": "ادفع قيمة مشترياتك عبر أحد البطاقات البنكة التالية واحصل على الخصم المحدد",
+    "bank_offer_sub_title_single": "ادفع قيمة مشترياتك عبر أحد بطاقات بنك :bank_name واحصل على خصم بنسبة "
   }
 }

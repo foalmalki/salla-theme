@@ -1,7 +1,0 @@
-﻿<article class="blog-card">
-  <a href="{{ article.url|default('/blog/sample') }}">
-    <img src="{{ article.image|default('https://picsum.photos/600/380?random=1') }}" alt="{{ article.title|default('Article') }}" loading="lazy">
-    <h3>{{ article.title|default('Article title') }}</h3>
-    <p>{{ article.excerpt|default('Short article excerpt to increase engagement and SEO signals.') }}</p>
-  </a>
-</article>

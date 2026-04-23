@@ -1,25 +1,21 @@
-﻿{% extends 'layouts/master.twig' %}
-
-{% block page_title %}{{ 'customer.wishlist'|trans }}{% endblock %}
-
-{% block content %}
-<section class="section">
-  <div class="container customer-layout">
-    {% include 'components/customer/sidebar.twig' %}
-    <div class="customer-content">
-      <h1>{{ 'customer.wishlist'|trans }}</h1>
-      <div class="product-grid product-grid--compact">
-        {% for i in 1..4 %}
-          {% include 'components/product/product-card.twig' with {
-            product: {
-              name: 'customer.saved_item'|trans ~ ' ' ~ i,
-              price: (210 + i * 10) ~ ' SAR',
-              image: 'https://picsum.photos/460/520?random=' ~ (140 + i)
-            }
-          } %}
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
+{#
+| Variable   | Type                 | Description |
+|------------|----------------------|-------------|
+| page       | object               |             |
+| page.title | string               |             |
+| page.slug  | string               |             |
+#}
+{% extends "layouts.customer" %}
+{% block head_scripts %}
+	<script defer data-cfasync="false" src="{{ 'wishlist-card.js'|asset }}"></script>
 {% endblock %}
+
+{% block inner_content %}
+	<div class="space-y-5" id="wishlist">
+		{% hook 'customer:wishlist.items.start' %}
+		<salla-products-list source="wishlist" row-cards product-card-component="custom-wishlist-card"></salla-products-list>
+		{% hook 'customer:wishlist.items.end' %}
+	</div>
+{% endblock %}
+
+ 

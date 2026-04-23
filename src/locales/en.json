@@ -1,182 +1,27 @@
 {
-  "meta": {
-    "default_description": "A premium fast theme focused on conversion and user experience."
+  "blocks": {
+    "header": {
+      "cart": "Cart"
+    },
+    "appBanner": {
+      "download_now": "download now"
+    }
+  },
+  "pages": {
+    "cart": {
+      "cart_options": "Cart Options"
+    },
+    "order": {
+      "can_edit_or_delete_your_review_within": "You can edit or delete your review within",
+      "edit_period_ended": "The period to edit the review has ended",
+      "delete_period_ended": "The period to delete the review has ended",
+      "days_since_added": "days since it was added",
+      "option_name": "Option name",
+      "option_content": "Content"
+    }
   },
   "common": {
-    "view_all": "View all",
-    "shop_now": "Shop now",
-    "explore_offers": "Explore offers",
-    "start_shopping": "Start shopping",
-    "close": "Close",
-    "search": "Search",
-    "no_data": "No data available",
-    "try_again_later": "Please try again later.",
-    "back_home": "Back to home",
-    "thank_you": "Thank you",
-    "thank_you_message": "Your order has been received successfully.",
-    "view_order": "View order",
-    "page_not_found": "The requested page was not found"
-  },
-  "header": {
-    "shipping_message": "Fast shipping across Saudi Arabia and GCC",
-    "help": "Help",
-    "track_order": "Track order",
-    "main_navigation": "Main navigation",
-    "open_menu": "Open menu",
-    "home": "Home",
-    "search": "Search",
-    "account": "Account",
-    "cart": "Cart",
-    "search_placeholder": "Search products or brands..."
-  },
-  "nav": {
-    "home": "Home",
-    "categories": "Categories",
-    "offers": "Offers",
-    "brands": "Brands",
-    "blog": "Blog",
-    "about": "About",
-    "account": "Account"
-  },
-  "mega": {
-    "fashion": "Fashion",
-    "men": "Men",
-    "women": "Women",
-    "kids": "Kids",
-    "electronics": "Electronics",
-    "smartphones": "Smartphones",
-    "audio": "Audio",
-    "gaming": "Gaming",
-    "promo_title": "Seasonal discounts up to 50%"
-  },
-  "footer": {
-    "about": "A global storefront with elegant UX and high performance.",
-    "quick_links": "Quick links",
-    "customer_service": "Customer service",
-    "shipping": "Shipping",
-    "returns": "Returns",
-    "contact": "Contact us",
-    "follow_us": "Follow us",
-    "rights": "All rights reserved"
-  },
-  "newsletter": {
-    "title": "Subscribe to our newsletter",
-    "subtitle": "Exclusive deals and new drops in your inbox.",
-    "placeholder": "Enter your email",
-    "subscribe": "Subscribe"
-  },
-  "trust": {
-    "secure_payment": "Secure payment",
-    "fast_shipping": "Fast shipping",
-    "easy_returns": "Easy returns",
-    "customer_support": "24/7 support"
-  },
-  "home": {
-    "page_title": "Homepage",
-    "hero_eyebrow": "Premium design for ambitious stores",
-    "hero_title": "Discover a new level of shopping",
-    "hero_subtitle": "Fast, smooth, and conversion-focused commerce experience.",
-    "featured_categories": "Featured categories",
-    "featured_products": "Featured products",
-    "best_sellers": "Best sellers",
-    "new_arrivals": "New arrivals",
-    "product": "Product",
-    "best_seller": "Best seller",
-    "new_item": "New",
-    "banner_small": "Weekly deals",
-    "banner_small_title": "Save more on top picks",
-    "banner_large": "Exclusive promotions",
-    "banner_large_title": "Extra discount for first-time shoppers",
-    "testimonials": "Testimonials",
-    "testimonial_text": "Amazing quality, fast delivery, and smooth checkout.",
-    "testimonial_author": "Customer",
-    "brands": "Top brands",
-    "social_gallery": "From our community",
-    "cta_title": "Ready to scale your store?"
-  },
-  "category": {
-    "label": "Category",
-    "products": "products"
-  },
-  "product": {
-    "add_to_cart": "Add to cart",
-    "filters": "Filters",
-    "price_range": "Price range",
-    "availability": "Availability",
-    "in_stock": "In stock",
-    "on_sale": "On sale",
-    "related_products": "Related products",
-    "listing_title": "All products",
-    "sort_popular": "Most popular",
-    "sort_newest": "Newest",
-    "sort_price_low": "Price low to high",
-    "sort_price_high": "Price high to low",
-    "item": "Product",
-    "single_title": "Premium Product Name",
-    "single_desc": "Short product description highlighting quality and value.",
-    "size": "Size",
-    "buy_now": "Buy now",
-    "specifications": "Specifications",
-    "specifications_text": "Clear details about material, dimensions, and care guide.",
-    "faq_q1": "Is this product authentic?",
-    "faq_a1": "Yes, all products are sourced from verified distributors.",
-    "faq_q2": "How long is shipping?",
-    "faq_a2": "Usually 2 to 5 business days inside Saudi Arabia.",
-    "badge_new": "New",
-    "badge_discount": "Sale",
-    "badge_best_seller": "Best seller"
-  },
-  "related": {
-    "item": "Related item"
-  },
-  "cart": {
-    "title": "Shopping cart",
-    "item": "Item",
-    "summary": "Order summary",
-    "subtotal": "Subtotal",
-    "shipping": "Shipping",
-    "tax": "Tax",
-    "total": "Total",
-    "checkout": "Proceed to checkout",
-    "you_may_like": "You may also like",
-    "recommended": "Recommended"
-  },
-  "customer": {
-    "dashboard": "Dashboard",
-    "welcome": "Welcome back",
-    "orders": "Orders",
-    "wishlist": "Wishlist",
-    "notifications": "Notifications",
-    "pending": "Pending",
-    "date": "Date",
-    "status": "Status",
-    "completed": "Completed",
-    "saved_item": "Saved item",
-    "notification_1": "Order #1021 has been updated to shipped.",
-    "notification_2": "New offers are available for your favorites.",
-    "notification_3": "You have an active coupon until the weekend."
-  },
-  "blog": {
-    "title": "Blog",
-    "article": "Article",
-    "excerpt": "Helpful content that drives trust and buying decisions.",
-    "single_title": "How to build a higher-converting storefront",
-    "paragraph_1": "Store success depends on the full journey from discovery to checkout.",
-    "paragraph_2": "Clarity, speed, and trust at each step directly improve sales."
-  },
-  "brand": {
-    "title": "Brands",
-    "name": "Brand",
-    "description": "Premium quality and thoughtful details.",
-    "single_title": "Brand page",
-    "product": "Brand product"
-  },
-  "page": {
-    "title": "General page",
-    "default_content": "This content can be edited by the merchant from admin."
-  },
-  "landing": {
-    "title": "Grand opening deals",
-    "subtitle": "Curated picks with limited-time exclusive offers."
+    "bank_offer_sub_title_multiple": "Pay for your purchases via one of the following bank cards and get the specified discount",
+    "bank_offer_sub_title_single": "Pay for your purchases via :bank_name bank card and get discount"
   }
 }

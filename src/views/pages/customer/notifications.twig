@@ -1,19 +1,23 @@
-﻿{% extends 'layouts/master.twig' %}
+{#
+| Variable                  | Type                      | Description |
+|---------------------------|---------------------------|-------------|
+| page                      | object                    |             |
+| page.title                | string                    |             |
+| page.slug                 | string                    |             |
+| notifications             | Notification[] *Paginator |             |
+| notifications.next_page   | ?string                   |             |
+| notifications.count       | int                       |             |
+| notifications[].is_new    | Bool                      |             |
+| notifications[].url       | string                    |             |
+| notifications[].sub_title | string                    |             |
+| notifications[].title     | string                    |             |
+| notifications[].date      | string                    |             |
+#}
+{% extends "layouts.customer" %}
+{% block inner_content %}
+	{% hook 'customer:notifications.items.start' %}
 
-{% block page_title %}{{ 'customer.notifications'|trans }}{% endblock %}
+	<salla-notifications></salla-notifications>
 
-{% block content %}
-<section class="section">
-  <div class="container customer-layout">
-    {% include 'components/customer/sidebar.twig' %}
-    <div class="customer-content">
-      <h1>{{ 'customer.notifications'|trans }}</h1>
-      <ul class="notification-list">
-        <li>{{ 'customer.notification_1'|trans }}</li>
-        <li>{{ 'customer.notification_2'|trans }}</li>
-        <li>{{ 'customer.notification_3'|trans }}</li>
-      </ul>
-    </div>
-  </div>
-</section>
+	{% hook 'customer:notifications.items.end' %}
 {% endblock %}
