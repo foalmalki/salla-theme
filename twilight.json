@@ -1,4 +1,4 @@
-﻿{
+{
   "version": "1.0.0",
   "theme_name": "Afaq",
   "repo_url": "https://github.com/foalmalki/salla-theme",
@@ -13,21 +13,12 @@
     },
     {
       "type": "string",
-      "label": "Hero Title",
-      "id": "hero_title",
-      "format": "text",
-      "value": "اكتشف مستوى جديد من التسوق"
-    },
-    {
-      "type": "string",
-      "label": "Hero Subtitle",
-      "id": "hero_subtitle",
-      "format": "text",
-      "value": "تصميم عالمي وتجربة شراء فائقة السرعة"
+      "label": "Placeholder",
+      "id": "placeholder",
+      "format": "hidden",
+      "value": "images/img_placeholder.png"
     }
   ],
-  "features": [
-    "filters"
-  ],
+  "features": [],
   "components": []
 }
