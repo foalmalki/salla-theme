@@ -213,3 +213,66 @@ salla-user-menu{
     @apply z-10;
   }
 }
+
+/* Professional identity-driven header look */
+.store-header {
+  .top-navbar {
+    background: linear-gradient(90deg, var(--brand-dark) 0%, var(--brand-primary) 55%, var(--brand-secondary) 100%);
+    color: #ffffff;
+
+    .topnav-link-item {
+      color: rgba(255, 255, 255, 0.92);
+      border-color: rgba(255, 255, 255, 0.18);
+      font-weight: 600;
+    }
+
+    .btn--rounded-gray,
+    .btn--circle-gray {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .main-nav-container {
+    border-bottom: 1px solid #e8ebf5;
+    box-shadow: 0 10px 24px rgba(74, 59, 209, 0.08);
+
+    .inner {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  .navbar-brand img {
+    max-height: 52px;
+    max-width: 182px;
+  }
+
+  custom-main-menu {
+    .main-menu > li > a {
+      color: #1f2340;
+      font-weight: 700;
+      letter-spacing: 0.1px;
+      border-radius: 999px;
+      margin-inline: 2px;
+      transition: all .2s ease;
+    }
+
+    .main-menu > li > a:hover,
+    .main-menu > li.is-active > a {
+      color: var(--brand-primary);
+      background: rgba(106, 27, 206, 0.08);
+    }
+  }
+
+  .header-btn__icon {
+    border-color: #dfe4f3;
+    color: var(--brand-dark);
+    background: #fff;
+  }
+
+  .s-cart-summary-count {
+    background: var(--brand-accent);
+  }
+}

@@ -85,10 +85,22 @@
     <style>
         :root {
             --font-main: '{{theme.font.name}}';
-            --color-primary: {{ theme.color.primary }};
-            --color-primary-dark: {{ theme.color.darker(0.15) }};
-            --color-primary-light: {{ theme.color.lighter(0.15) }};
-            --color-primary-reverse: {{ theme.color.reverse_text }};
+            /* Brand identity (fixed) */
+            --brand-primary: #6a1bce;
+            --brand-secondary: #1e88e5;
+            --brand-dark: #4a3bd1;
+            --brand-accent: #00b9ad;
+
+            /* Keep store color available for optional usage */
+            --store-primary: {{ theme.color.primary }};
+            --store-primary-dark: {{ theme.color.darker(0.15) }};
+            --store-primary-light: {{ theme.color.lighter(0.15) }};
+
+            /* Main theme palette */
+            --color-primary: var(--brand-primary);
+            --color-primary-dark: var(--brand-dark);
+            --color-primary-light: #8b49e0;
+            --color-primary-reverse: #ffffff;
         }
     </style>
     {# tracking services, custom css feature. #}
