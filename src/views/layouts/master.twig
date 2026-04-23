@@ -1,5 +1,5 @@
-﻿<!doctype html>
-<html lang="{{ locale.code|default('ar') }}" dir="{{ locale.code|default('ar') starts with 'ar' ? 'rtl' : 'ltr' }}">
+<!doctype html>
+<html lang="{{ language.code|default('ar') }}" dir="{{ theme.is_rtl ? 'rtl' : 'ltr' }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="{{ 'styles/main.css'|asset }}">
   {% block head_extra %}{% endblock %}
 </head>
-<body class="theme-afaq {{ locale.code|default('ar') starts with 'ar' ? 'is-rtl' : 'is-ltr' }}">
-  {% include 'components/header/header.twig' %}
+<body class="theme-afaq {{ theme.is_rtl ? 'is-rtl' : 'is-ltr' }}">
+  {% component 'header.header' %}
 
   <main id="main-content" class="site-main">
     {% block content %}{% endblock %}
   </main>
 
-  {% include 'components/footer/footer.twig' %}
+  {% component 'footer.footer' %}
 
   <script defer src="{{ 'scripts/main.js'|asset }}"></script>
   {% block scripts %}{% endblock %}
