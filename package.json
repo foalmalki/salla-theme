@@ -4,8 +4,10 @@
   "private": true,
   "description": "Premium Salla Twilight Theme",
   "scripts": {
-    "dev": "salla theme preview",
-    "build": "echo Build handled by Twilight pipeline",
+    "dev": "pnpm run development",
+    "development": "webpack --mode development --watch",
+    "build": "pnpm run production",
+    "production": "webpack --mode production",
     "lint": "echo Add linting rules if needed"
   },
   "devDependencies": {
