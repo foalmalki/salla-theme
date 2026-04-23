@@ -1,40 +1,5 @@
-﻿<footer class="site-footer">
-  <div class="container site-footer__grid">
-    <div>
-      <h3>{{ store.name|default('Afaq') }}</h3>
-      <p>{{ 'footer.about'|trans }}</p>
-    </div>
-    <div>
-      <h4>{{ 'footer.quick_links'|trans }}</h4>
-      <ul>
-        <li><a href="/">{{ 'nav.home'|trans }}</a></li>
-        <li><a href="/categories">{{ 'nav.categories'|trans }}</a></li>
-        <li><a href="/blog">{{ 'nav.blog'|trans }}</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>{{ 'footer.customer_service'|trans }}</h4>
-      <ul>
-        <li><a href="/pages/shipping">{{ 'footer.shipping'|trans }}</a></li>
-        <li><a href="/pages/returns">{{ 'footer.returns'|trans }}</a></li>
-        <li><a href="/contact-us">{{ 'footer.contact'|trans }}</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>{{ 'footer.follow_us'|trans }}</h4>
-      <ul class="social-links">
-        <li><a href="{{ theme.settings.instagram_url|default('#') }}">Instagram</a></li>
-        <li><a href="{{ theme.settings.tiktok_url|default('#') }}">TikTok</a></li>
-        <li><a href="{{ theme.settings.x_url|default('#') }}">X</a></li>
-      </ul>
-    </div>
-  </div>
-  {% if theme.settings.show_newsletter %}
-    {% include 'components/common/newsletter.twig' %}
-  {% endif %}
-  <div class="site-footer__bottom">
-    <div class="container">
-      <p>{{ 'footer.rights'|trans }} © {{ "now"|date("Y") }}</p>
-    </div>
+<footer class="site-footer" style="padding:24px;background:#fff;border-top:1px solid #e5e7eb;margin-top:24px">
+  <div class="container">
+    <p>{{ 'footer.rights'|trans }} © {{ "now"|date("Y") }}</p>
   </div>
 </footer>
